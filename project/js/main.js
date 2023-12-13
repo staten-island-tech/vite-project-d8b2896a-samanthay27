@@ -1,4 +1,6 @@
-import { filter, DOMselectors, selectors } from "./dom";
+import "../styles/style.css"
+import { menu } from "./menu";
+import {filter}
 
 function clearfields() {
  DOMselectors.container.innerHTML = "";
