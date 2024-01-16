@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>TOUS les JOURS Menu</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Playfair+Display&family=Quicksand:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body class="main">
- <h1 class="title">TOUS LES JOURS MENU</h1>
-
- <h3>Themes:</h3>
- <button class="theme">Warm White</button>
-
- <h3>Filters:</h3>
- <div class="filters">
-   <button class="bread">Bread</button>
-   <button class="cake">Cake</button>
-   <button class="pastry">Pastry</button>
-   <button class="coffee">Coffee</button>
-   <button class="tea">Tea</button>
-   <button class="blended">Blended</button>
- </div>
-
- <div class="result"></div>
-
- <h5>*Product Availability and actual problem design may vary by location</h5>
- <h5>*All calorie measurements are based on serving size</h5>
-
- <script type="module" src="./js/main.js"></script>
-
-</body>
+ <head>
+   <meta charset="UTF-8" />
+   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>VITE PROJECT</title>
+ </head>
+ <body class="normalmode">
+   <div class="app"></div>
+   <h1 class="title">Tous Les Jours Menu</h1>
+   <div class="main">
+     <button class="category" id="changetheme">Change Theme</button>
+     <button class="all">All</button>
+         <!--   data-____ stores custom data that doesnt need to have a visual representation-->
+     <button class="category" data-category="Bread">Bread</button>
+     <button class="category" data-category="Cake">Cake</button>
+     <button class="category" data-category="Pastry">Pastry</button>
+     <button class="category" data-category="Coffee">Coffee</button>
+     <button class="category" data-category="Tea">Tea</button>
+     <button class="category" data-category="Blended">Blended</button>
+     <div class="cardcontainer"></div>
+   </div>
+   <script type="module" src="./js/main.js"></script>
+ </body>
 </html>
+
 

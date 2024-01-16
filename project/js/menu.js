@@ -1,4 +1,4 @@
-const menu = [
+const fooditems = [
     {
         name: "Almond Croissant",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadbd_Almond%20Croissant.webp',
@@ -40,7 +40,7 @@ const menu = [
         price: "$7.95",
         calories: "5 Calories",
         tag: "coffee"
-    }, 
+    },
     {
         name: "Buttercream Bread",
         img: 'https://assets-global.website-files.com/6419b668828857182d1e7359/645068bb1560011534b8f210_Butter%20Cream%20Bread.webp',
@@ -278,203 +278,203 @@ const menu = [
         price: "$1.75",
         calories: "60 Calories",
         tag: "tea"
-    },   
+    }, 
     {
         name: "Iced Cafe Latte",
         img: 'https://assets-global.website-files.com/64190cfdcda0164ec3252946/646b73850288e33b35b0ae05_Copy%20of%20Iced%20Cafe%20Latte-2.webp',
         price: "$3.95",
         calories: "170 Calories",
         tag: "coffee"
-    },   
+    }, 
     {
         name: "Iced Cafe Mocha",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae14_Copy%20of%20Iced%20Cafe%20Mocha.png',
         price: "$3.95",
         calories: "310 Calories",
         tag: "coffee"
-    },   
+    }, 
     {
         name: "Iced Caramel Macchiato",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae0f_Caramel%20Macchiato.png" alt="icedcaramelmacchiato',
         price: "$3.95",
         calories: "290 Calories",
         tag: "coffee"
-    },   
+    }, 
     {
         name: "Iced Green Tea",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae2d_Iced%2520Green%2520Tea-p-1080.png',
         price: "$1.95",
         calories: "60 Calories",
         tag: "tea"
-    },   
+    }, 
     {
         name: "Iced Lavender Latte",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae0e_Lavender%20Latte.png',
         price: "$3.95",
         calories: "240 Calories",
         tag: "coffee"
-    },   
+    }, 
     {
         name: "Iced Matcha Latte",
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_aJ1DWBvqPll2bc6TBYL64oKbkGiF8oPutbr6nYMWQMdOSnbaFgnNpp5zT3slPXGmHtw&usqp=CAU',
         price: "$3.95",
         calories: "210 Calories",
         tag: "tea"
-    },   
+    }, 
     {
         name: "Iced Ube Latte",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae07_iced-ube-latte.png',
         price: "$4.25",
         calories: "230 Calories",
         tag: "tea"
-    },  
+    },
     {
         name: "Iced Vanilla Latte",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae0c_Iced%2520Vanilla%2520Latte-p-500.png',
         price: "$3.95",
         calories: "230 Calories",
         tag: "coffee"
-    },   
+    }, 
     {
         name: "Jungle Party",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae02_Screenshot%202023-05-15%20at%202.28.40%20PM.png',
         price: "$62.95",
         calories: "250 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Kimchi Croquette",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deaddc_Kimchi%20Croquette.webp',
         price: "$4.75",
         calories: "300 Calories",
         tag: "pastry"
-    },   
+    }, 
     {
         name: "Lake Awassa",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/655ba9e9940bb4cd03ae09b1_CoffeeBean_LakeAwassa-p-500.png',
         price: "$7.95",
         calories: "5 Calories",
         tag: "coffee"
-    }, 
+    },
     {
         name: "Lavender Latte",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae0e_Lavender%20Latte.png',
         price: "$3.95",
         calories: "270 Calories",
         tag: "coffee"
-    },   
+    }, 
     {
         name: "Mango Cloud #2",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deade2_Mango%20Cloud%202.webp',
         price: "$59.00",
         calories: "290 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Mango Cloud #3",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deade3_Mango%20Cloud%203.webp',
         price: "$59.00",
         calories: "290 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Mango Smoothie",
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJPJ5rOiwgc5YVqaNcSgVk_Y2a3hpNI2P7gaXUoHgu4ZZxTXL6NnGbVXe_9IKQ9mjmVI&usqp=CAU',
         price: "$6.95",
         calories: "250 Calories",
         tag: "blended"
-    },   
+    }, 
     {
         name: "Matcha Frappe",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae1b_Copy%20of%20Matcha%20Frappe.png',
         price: "$3.35",
         calories: "480 Calories",
         tag: "blended"
-    },   
+    }, 
     {
         name: "Matcha Latte",
         img: 'https://assets-global.website-files.com/6419b668828857182d1e7359/64639f3e4f3b525d461b0e24_Copy%20of%20Matcha%20Latte.png',
         price: "$3.35",
         calories: "220 Calories",
         tag: "tea"
-    },   
+    }, 
     {
         name: "Milk Cream Bread",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3dead32_Milk%20Cream%20Bread%20(1).webp',
         price: "$4.40",
         calories: "180 calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Mocha Cloud",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deade1_Screenshot%25202023-05-02%2520at%25209.35.30%2520AM-p-500.webp',
         price: "$59.00",
         calories: "310 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Mocha Frappe",
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTwatoBAxj7Fx0oeO0VnHVoGPcfMRLQw14vnSO2nv2dU5MwPOSD_XE-LMHB8JPv03JX8&usqp=CAU',
         price: "$3.35",
         calories: "330 Calories",
         tag: "blended"
-    },   
+    }, 
     {
         name: "Multi-Grain Bread",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3dead4f_Multi-Grain%20Pan%20Bread.webp',
         price: "$9.95",
         calories: "290 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Orange Cream Piece",
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSprrfJEC4wfDMdNsorSl7gwtG7CqPSTn5txb0bknrRbkqE2FNB7mgDBJUeX7CkdMmr5aQ&usqp=CAU',
         price: "$10.95",
         calories: "260 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Pain Au Chocolat",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae22_Pain%20Au%20Chocolat.jpg',
         price: "$4.50",
         calories: "260 Calories",
         tag: "pastry"
-    },   
+    }, 
     {
         name: "Party Bear",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae03_Screenshot%202023-05-15%20at%202.30.45%20PM.png',
         price: "$49.95",
         calories: "230 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Peach Cream Cake",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deade4_Peach%20Cream%20Cake.webp',
         price: "$45.00",
         calories: "260 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Peach Cream Piece",
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQkClcKcTtf9zcV8q7plgIjVChOYJ0pJqOg&usqp=CAU',
         price: "$10.95",
         calories: "260 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Piggy Cake",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae04_Screenshot%202023-05-15%20at%202.33.25%20PM.png',
         price: "$49.95",
         calories: "440 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Potato Cheese Bread",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae21_Potato%20Cheese%20Bread.jpg',
         price: "$4.50",
         calories: "410 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Purple Sweet Potato Loaf",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3dead19_Purple%2520Sweet%2520Potato%2520Loaf-p-500.webp',
@@ -488,112 +488,112 @@ const menu = [
         price: "$9.95",
         calories: "280 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Red Bean Bread",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3dead34_Redbean%20Bread.webp',
         price: "$2.25",
         calories: "240 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Red Bean Donut",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadd9_Redbean%20Donut.webp',
         price: "$4.50",
         calories: "350 Calories",
         tag: "pastry"
-    },   
+    }, 
     {
         name: "Red Velvet Cake",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deaded_Screenshot%202023-05-15%20at%2012.22.11%20PM.png',
         price: "$49.95",
         calories: "440 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Sesame Donut",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae20_Sesame%20Donut.jpg',
         price: "$4.50",
         calories: "250 Calories",
         tag: "pastry"
-    },   
+    }, 
     {
         name: "Soboro Bread",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3dead4a_Soboro.webp',
         price: "$4.50",
         calories: "260 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Spinach Feta Danish",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadae_Spinach%2520Feta%2520Danish-p-500.webp',
         price: "$4.95",
         calories: "320 Calories",
         tag: "pastry"
-    },   
+    }, 
     {
         name: "Strawberry Cloud Cake",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deade6_Strawberry%20Cloud%20Cake.webp',
         price: "$57.00",
         calories: "270 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Strawberry Croissant",
         img: 'https://assets-global.website-files.com/64190cfdcda0164ec3252946/64512649cf3b712b30084491_Strawberry%20Croissant%20(1).png',
         price: "$5.75",
         calories: "300 Calories",
         tag: "pastry"
-    },   
+    }, 
     {
         name: "Strawberry Smoothie",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae1e_Copy%20of%20Strawberry%20Smoothie.png',
         price: "$6.95",
         calories: "230 Calories",
         tag: "blended"
-    },   
+    }, 
     {
         name: "Strawberry Sweet",
-        img: '"https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadea_Screenshot%202023-05-15%20at%2012.14.16%20PM.png',
+        img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadea_Screenshot%202023-05-15%20at%2012.14.16%20PM.png',
         price: "$56.95",
         calories: "480 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Sweet Frank Roll",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3dead4e_Sweet%20Frank%20Roll.webp',
         price: "$5.50",
         calories: "300 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Sweet Potato Mousse Cake",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadf2_Screenshot%202023-05-15%20at%2012.30.52%20PM.png',
         price: "$9.95",
         calories: "280 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Sweet Rice Donut",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deaddb_Sweet%20Rice%20Donut.webp',
         price: "$4.50",
         calories: "180 Calories",
         tag: "pastry"
-    },   
+    }, 
     {
         name: "Taro Cream Bread",
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnzi50nXjSozqlhur113cRPoxmS9DxDfNYg&usqp=CAU',
         price: "$6.50",
         calories: "550 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Tiramisu",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadf1_Screenshot%202023-05-15%20at%2012.29.13%20PM.png',
         price: "$56.95",
         calories: "180 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Triple Berry Cloud",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae28_Screenshot%202023-05-17%20at%203.52.39%20PM.png',
@@ -607,45 +607,45 @@ const menu = [
         price: "$49.95",
         calories: "330 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Ube Latte",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae09_Ube%2520Latte-p-1080.png',
         price: "$4.75",
         calories: "240 Calories",
         tag: "tea"
-    },   
+    }, 
     {
         name: "Vanilla Chocolate Heart Mousse",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadf3_Screenshot%202023-05-15%20at%2012.33.43%20PM.png',
         price: "$56.95",
         calories: "250 Calories",
         tag: "cake"
-    },   
+    }, 
     {
         name: "Vanilla Latte",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deae0d_Latte.png',
         price: "$4.85",
         calories: "210 Calories",
         tag: "coffee"
-    },   
+    }, 
     {
         name: "Whole Milk Loaf",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3dead35_Whole%2520Milk%2520Loaf-p-500.webp',
         price: "$9.95",
         calories: "270 Calories",
         tag: "bread"
-    },   
+    }, 
     {
         name: "Yuzu Pie",
         img: 'https://assets-global.website-files.com/649249d29a20bd6bc3deac48/649249d29a20bd6bc3deadb5_Yuzu%20Pie.webp',
         price: "$4.50",
         calories: "420 Calories",
         tag: "pastry"
-    },      
+    },    
  ];
+ export {fooditems}
+ //sends the information/cards to somewhere with something with export{menu} in the code
  
- export {menu}
- //sends the information/cards to somewhere with something with export{tljmenu} in the code
  
  

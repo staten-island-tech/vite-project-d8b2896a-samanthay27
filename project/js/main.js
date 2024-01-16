@@ -1,166 +1,65 @@
-import "../styles/style.css"
-import { menu } from "./menu";
-import {filter}
+import '../styles/style.css';
+import { fooditems } from './menu';
 
-function clearfields() {
- DOMselectors.container.innerHTML = "";
+
+const DOMselectors = {
+ changetheme: document.querySelector("#changetheme"),
+ cardcontainer: document.querySelector(".cardcontainer"),
+ buttons: document.querySelectorAll(".category"),
+ all: document.querySelector(".all")
+};
+
+
+DOMselectors.changetheme.addEventListener("click", function () {
+ if (document.body.classList.contains("normalmode")) {
+   document.body.classList.add("uglymode");
+   document.body.classList.remove("normalmode");
+ } else {
+   document.body.classList.add("normalmode");
+   document.body.classList.remove("uglymode");
+ }
+});
+
+
+function makecard(arr) {
+ DOMselectors.cardcontainer.innerHTML = "";
+ arr.forEach((fooditem) => {
+   DOMselectors.cardcontainer.insertAdjacentHTML(
+     "beforeend",
+     `<div class="card">
+       <h3 class="name">${fooditem.name}</h3>
+       <img src="${fooditem.img}" class="cardimg">
+       <h4 class="price">${fooditem.price}</h4>
+       <h4 class="calories">${fooditem.calories}</h4>
+     </div>`
+   );
+ });
 }
 
-// function makeCards(array) {
-//   array.forEach((x) => {
-//     DOMselectors.container.insertAdjacentHTML(
-//       "beforeend", `
-//         <div class="card">
-//           <h3 class="name">${x.name}</h3>
-//           <img class="img" src="${x.img}">
-//           <h4 class="price">${x.price}</h4>
-//           <h4 class="calories">$${x.calories}</h4>
-//         </div>`
-//     );
-//   });
-// };
 
-DOMSelectors.bread.addEventListener("click", function(event){
-clearfields()
-const printbread = categories.filter((menu) => menu.tag === "bread");
-ehe(printbread)
-});
+function filtering() {
+ DOMselectors.buttons.forEach((btn) => btn.addEventListener("click", function () {
+   let category = btn.getAttribute("data-category").toLowerCase();
+   let newArr = fooditems.filter((fooditem) => fooditem.tag.toLowerCase() === category);
+   makecard(newArr);
+ }));
+}
 
-DOMSelectors.cake.addEventListener("click", function(event){
-   event.preventDefault();
-   function clearfields(){
-       DOMSelectors.container.innerHTML="";
-   }
-   clearfields()
-   function help(){
-       const printbread = menu.filter((menu) => menu.tag === "cake");
-       printcake.forEach((menu)=>
-   {const ehe =
-       `<div class="container">
-       <div class="card">
-           <h3 class = "name">${x.name}</h3>
-           <img src="${x.img}" class="img">
-           <h4 class = ${x.price}>Price</h4>
-           <h4 class = ${x.calories}></h4>
-       </div> 
-   </div>`
-   DOMSelectors.container.insertAdjacentHTML(
-       "beforeend",
-       ehe,
-      
-   )})}
-   help()
-});
 
-DOMSelectors.pastry.addEventListener("click", function(event){
-   event.preventDefault();
-   function clearfields(){
-       DOMSelectors.container.innerHTML="";
-   }
-   clearfields()
-   function help(){
-       const printpastry = menu.filter((menu) => menu.tag === "pastry");
-       printpastry.forEach((menu)=>
-   {const ehe =
-       `<div class="container">
-       <div class="card">
-           <h3 class = "name">${x.name}</h3>
-           <img src="${x.img}" class="img">
-           <h4 class = ${x.price}>Price</h4>
-           <h4 class = ${x.calories}></h4>
-       </div> 
-   </div>`
-   DOMSelectors.container.insertAdjacentHTML(
-       "beforeend",
-       ehe,     
-   )})}
- help()
-});
+filtering();
+makecard(fooditems);
 
-DOMSelectors.coffee.addEventListener("click", function(event){
-   event.preventDefault();
-   function clearfields(){
-       DOMSelectors.container.innerHTML="";
-   }
-   clearfields()
-   function help(){
-       const printcoffee = menu.filter((menu) => menu.tag === "coffee");
-       printcoffee.forEach((menu)=>
-   {const ehe =
-       `<div class="container">
-       <div class="card">
-           <h3 class = "name">${x.name}</h3>
-           <img src="${x.img}" class="img">
-           <h4 class = ${x.price}>Price</h4>
-           <h4 class = ${x.calories}></h4>
-       </div> 
-   </div>`
-   DOMSelectors.container.insertAdjacentHTML(
-       "beforeend",
-       ehe,    
-   )})}
-   help()
-});
 
-DOMSelectors.tea.addEventListener("click", function(event){
-   event.preventDefault();
-   function clearfields(){
-       DOMSelectors.container.innerHTML="";
-   }
-   clearfields()
-   function help(){
-       const printtea = menu.filter((menu) => menu.tag === "tea");
-       printtea.forEach((category)=>
-   {const help =
-       `<div class="container">
-       <div class="card">
-            <h3 class = "name">${x.name}</h3>
-           <img src="${x.img}" class="img">
-           <h4 class = ${x.price}>Price</h4>
-           <h4 class = ${x.calories}></h4>
-       </div> 
-   </div>`
-   DOMSelectors.container.insertAdjacentHTML(
-       "beforeend",
-       ehe,  
-   )})}
-   help()
-});
+DOMselectors.all.addEventListener("click", function(){
+ makecard(fooditems)
+ //hehehehe says that if the all button is clicked make all of the cards
+})
 
-DOMSelectors.blended.addEventListener("click", function(event){
-   event.preventDefault();
-   function clearfields(){
-       DOMSelectors.container.innerHTML="";
-   }
-   clearfields()
-   function help(){
-       const printblended = menu.filter((menu) => menu.tag === "blended");
-       printblended.forEach((menu)=>
-   {const help =
-       `<div class="container">
-       <div class="card">
-            <h3 class = "name">${x.name}</h3>
-           <img src="${x.img}" class="img">
-           <h4 class = ${x.price}>Price</h4>
-           <h4 class = ${x.calories}></h4>
-       </div> 
-   </div>`
-   DOMSelectors.container.insertAdjacentHTML(
-       "beforeend",
-       ehe,
-   )})}
-   help()
-  
-DOMselectors.cake.addEventListener("click", function(event){
- clearfields()
- const printcake = menu.filter((menu) => menu.tag === "cake")
- ehe(printcake)
-});
 
-let buttons = document.querySelectorAll('button');
-buttons.forEach((btn) => btn.addEventListener("click", function () {
- let type = btn.textContent.toLowerCase();
- let newarray = filter.find(f => f[0].tag === type);
- clearfields();
- makeCards(newarray);
-}));
+
+
+
+
+
+
+
